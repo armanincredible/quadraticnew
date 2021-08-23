@@ -29,7 +29,7 @@ void solve_quadratic_equation (float a, float b, float c, int* ammount_solutions
 {
     float d = 0;
     d = calc_discr (a, b, c);
-    if (d > 0)
+    if (d > eps)
     {
         calc_roots_quadratic (a, b, d, x1, x2);
         *ammount_solutions = two_solutions;
